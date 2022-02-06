@@ -19,7 +19,7 @@ import './home.page.scss'
 import backend_img from '../../assets/be.jpg'
 import frontend_img from '../../assets/fr3.png'
 import ai_img from '../../assets/ai.jpg'
-import { Phone } from '@mui/icons-material'
+import my_image from '../../assets/ai.jpg'
 
 
 
@@ -57,29 +57,31 @@ const HomePage = () => {
             <div className='intro__text__container'>
 
                 <h2 className='su_2'> I'm a FullStack Developer </h2>
-                <h2> Consulant & </h2>
-                <h2> Researcher </h2> 
+                <h2 className='su_4'> Consulant & </h2>
+                <h2 className='su_6'> Researcher </h2> 
                 <VSpacerComponent space={2} />
 
-                <p className='intro__text__container__text'>
+                <p className='intro__text__container__text su_8'>
                     I help companies build better experiences for their customers.
                 </p>
 
             </div>
 
-            <div className='intro__avatar_container' />
+            <div className='intro__avatar_container'>
+                <img src={my_image}  className="intro__avatar_container__image fd_16"/>
+            </div>
 
         </div>
         
         <div className="page__section skills">
-            <h2 style={{ textAlign: 'center' }}> SKILLS </h2> 
+            <h2 className='su_6 section_title' text="SKILLS" style={{ textAlign: 'center' }}> SKILLS </h2> 
             <VSpacerComponent space={8} />
 
             {
                 skills.map((skill, index)=> {
 
                     return (
-                        <SkillCardComponent key={index} skill={skill} />
+                        <SkillCardComponent key={index} skill={{ ...skill, index }} />
                     )
                 })
             }
@@ -87,21 +89,21 @@ const HomePage = () => {
         
         
         <div className="page__section contact">
-            <h2 style={{ textAlign: 'center' }}> CONTACT ME </h2> 
+            <h2 style={{ textAlign: 'center' }} className='su_8 section_title' text="CONTACT ME" > CONTACT ME </h2> 
             <VSpacerComponent space={8} />
 
 
-            <div className="contact_card">
+            <div className="contact_card su_12">
                 <AttachEmailIcon />
                 <p> kj@mail.com </p>
             </div>
             
-            <a href='https://www.linkedin.com/in/kipchumba-jepkoech-47b7b015a/' className="contact_card" target='_blank'>
+            <a href='https://www.linkedin.com/in/kipchumba-jepkoech-47b7b015a/' className="contact_card su_14" target='_blank'>
                 <GitHubIcon />
                 <p> Kipchumba Jepkoech </p>
             </a>
 
-            <a href='tel:+254714335322' className="contact_card">    
+            <a href='tel:+254714335322' className="contact_card su_16">    
                 <LocalPhoneIcon />
                 <p> +254-714-33-522 </p>
             </a>
