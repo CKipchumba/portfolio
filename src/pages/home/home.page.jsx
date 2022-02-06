@@ -20,6 +20,10 @@ import backend_img from '../../assets/be.jpg'
 import frontend_img from '../../assets/fr3.png'
 import ai_img from '../../assets/ai.jpg'
 import my_image from '../../assets/ai.jpg'
+import nc_img from '../../assets/nc.jfif'
+import me_img from '../../assets/me.jpg'
+import usiu_img from '../../assets/usiu.png'
+import { Grid } from '@mui/material'
 
 
 
@@ -70,7 +74,7 @@ const HomePage = () => {
             </div>
 
             <div className='intro__avatar_container'>
-                <img src={my_image}  className="intro__avatar_container__image fd_16"/>
+                <img src={me_img}  className="intro__avatar_container__image fd_16"/>
             </div>
 
         </div>
@@ -87,6 +91,32 @@ const HomePage = () => {
                     )
                 })
             }
+        </div>
+
+        <div className="page__section skills">
+            <h2 className='su_6 section_title' text="COMPANIES" style={{ textAlign: 'center' }}> COMPANIES/EXPERIENCE </h2> 
+            <VSpacerComponent space={8} />
+
+            <Grid container spacing={6}>
+                <Grid item xs={12} md={4}>
+                    <div className="company_container">
+                        <img src={nc_img} alt="" className="company_container__image" />
+                        <h3> Native Coders </h3>
+                    </div>
+                </Grid>
+                <Grid item xs={12} md={4}>
+                    <div className="company_container">
+                        <img src={ai_img} alt="" className="company_container__image" />
+                        <h3> Next </h3>
+                    </div>
+                </Grid>
+                <Grid item xs={12} md={4}>
+                    <div className="company_container">
+                        <img src={usiu_img} alt="" className="company_container__image" />
+                        <h3> United States University </h3>
+                    </div>
+                </Grid>
+            </Grid>
         </div>
         
         
