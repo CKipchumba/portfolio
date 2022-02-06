@@ -42,6 +42,25 @@
     }
 }
 
+.intro__floating_text {
+    
+    position: absolute;
+    top: 40%;
+    
+    // right: 2%;
+
+    transform: translateX(50%, 50%);
+
+    width: 100%;
+
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 4rem;
+
+    color: $PRIMARY_COLOR;
+    opacity: .04;
+}
+
 .section_title::before {
     content: attr(text);
 
@@ -78,7 +97,7 @@
 
     @media screen and (min-width: 800px) {
         h2 {
-            font-size: 2rem;
+            font-size: 2.2rem;
         }
     }
 
@@ -90,6 +109,16 @@
         font-family: 'Montserrat';
         font-weight: bolder;
         margin: 0;
+    }
+
+    h2:first-child {
+        color: $PRIMARY_COLOR;
+    }
+    h2:nth-child(2) {
+        color: $SECONDARY_COLOR;
+    }
+    h2:nth-child(3) {
+        color: $TERTIARY_COLOR;
     }
 }
 .intro__text__container__text {

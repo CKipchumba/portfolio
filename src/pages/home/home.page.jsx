@@ -54,6 +54,8 @@ const HomePage = () => {
 
         <div className="page__section intro">
 
+            <p className='intro__floating_text'> Cynthia Jepkoech </p>
+
             <div className='intro__text__container'>
 
                 <h2 className='su_2'> I'm a FullStack Developer </h2>
