@@ -46,7 +46,7 @@
     justify-content: space-between;
     align-items: center;
 
-    background-color: $PRIMARY_COLOR;
+    // background-color: $PRIMARY_COLOR;
 
 
 
@@ -69,6 +69,17 @@
 
 }
 
+.intro__text__container {
+    h2 {
+        font-family: 'Montserrat';
+        font-weight: bolder;
+        margin: 0;
+    }
+}
+.intro__text__container__text {
+    max-width: 480px;
+}
+
 .intro__avatar_container {
     height: 20vw;
     min-height: 200px;
@@ -87,6 +98,43 @@
 .more_skills {
     background-color: rgb(0, 119, 255);
 }
+
+
+
+
 .contact {
-    background-color: rgb(255, 0, 149);
+
+    // background-color: $TERTIARY_COLOR;
+
+    
+    @media screen and (max-width: 880px) {
+        padding: 5vh 15vw;
+    }
+    @media screen and (min-width: 880px) {
+        padding: 5vh 20vw;
+    }
+    @media screen and (min-width: 1080px) {
+        padding: 5vh 26vw;
+    }
+}
+
+.contact_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+
+    padding: 1rem 2rem;
+
+    border-radius: 10px;
+
+    margin-bottom: 8vh;
+
+    background-color: $TERTIARY_COLOR;
+
+    p {
+        margin-left: 1rem;
+    }
+ 
 }

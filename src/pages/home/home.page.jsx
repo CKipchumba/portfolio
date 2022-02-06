@@ -1,7 +1,15 @@
 
 import React from 'react'
-import SkillCardComponent from '../../components/skill_card/skill_card.component'
 
+import GitHubIcon from '@mui/icons-material/GitHub'
+import AttachEmailIcon from '@mui/icons-material/AttachEmail'
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone'
+
+
+
+// components
+import SkillCardComponent from '../../components/skill_card/skill_card.component'
+import VSpacerComponent from '../../components/v_spacer/v_spacer.component'
 
 
 
@@ -11,7 +19,8 @@ import './home.page.scss'
 import backend_img from '../../assets/be.jpg'
 import frontend_img from '../../assets/fr3.png'
 import ai_img from '../../assets/ai.jpg'
-import VSpacerComponent from '../../components/v_spacer/v_spacer.component'
+import { Phone } from '@mui/icons-material'
+
 
 
 const HomePage = () => {
@@ -45,14 +54,14 @@ const HomePage = () => {
 
         <div className="page__section intro">
 
-            <div className='intro__text'>
+            <div className='intro__text__container'>
 
-                <h2> I'm a FullStack Developer </h2>
+                <h2 className='su_2'> I'm a FullStack Developer </h2>
                 <h2> Consulant & </h2>
                 <h2> Researcher </h2> 
                 <VSpacerComponent space={2} />
 
-                <p>
+                <p className='intro__text__container__text'>
                     I help companies build better experiences for their customers.
                 </p>
 
@@ -76,11 +85,26 @@ const HomePage = () => {
             }
         </div>
         
-        <div className="page__section more_skills">
-            
-        </div>
         
         <div className="page__section contact">
+            <h2 style={{ textAlign: 'center' }}> CONTACT ME </h2> 
+            <VSpacerComponent space={8} />
+
+
+            <div className="contact_card">
+                <AttachEmailIcon />
+                <p> kj@mail.com </p>
+            </div>
+            
+            <a href='https://www.linkedin.com/in/kipchumba-jepkoech-47b7b015a/' className="contact_card" target='_blank'>
+                <GitHubIcon />
+                <p> Kipchumba Jepkoech </p>
+            </a>
+
+            <a href='tel:+254714335322' className="contact_card">    
+                <LocalPhoneIcon />
+                <p> +254-714-33-522 </p>
+            </a>
             
         </div>
 
