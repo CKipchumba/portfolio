@@ -19,11 +19,10 @@ import './home.page.scss'
 import backend_img from '../../assets/be.jpg'
 import frontend_img from '../../assets/fr3.png'
 import ai_img from '../../assets/ai.jpg'
-import my_image from '../../assets/ai.jpg'
 import nc_img from '../../assets/nc.jfif'
 import me_img from '../../assets/me.jpg'
+import tose_img from '../../assets/tose.png'
 import usiu_img from '../../assets/usiu.png'
-import { Grid } from '@mui/material'
 
 
 
@@ -94,10 +93,32 @@ const HomePage = () => {
         </div>
 
         <div className="page__section skills">
-            <h2 className='su_6 section_title' text="COMPANIES" style={{ textAlign: 'center' }}> COMPANIES/EXPERIENCE </h2> 
+            <h2 className='su_6 section_title' text="EXPERIENCE" style={{ textAlign: 'center' }}> EXPERIENCE </h2> 
             <VSpacerComponent space={8} />
 
-            <Grid container spacing={6}>
+            <div className="companies">
+
+                <div className="company_container">
+                    <img src={nc_img} alt="" className="company_container__image" />
+                    <VSpacerComponent space={2} />
+                    <h3> Native Coders </h3>
+                </div>
+
+                <div className="company_container">
+                    <img src={tose_img} alt="" className="company_container__image" />
+                    <VSpacerComponent space={2} />
+                    <h3> ToseLp </h3>
+                </div>
+                
+                <div className="company_container">
+                    <img src={usiu_img} alt="" className="company_container__image" />
+                    <VSpacerComponent space={2} />
+                    <h3> United States University </h3>
+                </div>
+
+            </div>
+
+            {/* <Grid container spacing={2}>
                 <Grid item xs={12} md={4}>
                     <div className="company_container">
                         <img src={nc_img} alt="" className="company_container__image" />
@@ -116,7 +137,7 @@ const HomePage = () => {
                         <h3> United States University </h3>
                     </div>
                 </Grid>
-            </Grid>
+            </Grid> */}
         </div>
         
         

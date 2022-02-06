@@ -2,7 +2,8 @@
 
 
 .page {
-    scroll-snap-type: x mandatory;
+    position: relative;
+    // scroll-snap-type: y mandatory;
     overflow: auto;
     height: 100vh;
 
@@ -27,7 +28,7 @@
     position: relative;
     scroll-snap-align: start;
 
-    width: 100vw;
+    width: 98vw;
     min-height: 100vh;
 
 
@@ -51,8 +52,9 @@
 
     transform: translateX(50%, 50%);
 
-    width: 100%;
+    max-width: 80%;
 
+    text-align: center;
     font-family: 'Montserrat';
     font-weight: 900;
     font-size: 4rem;
@@ -163,15 +165,44 @@
 
 
 
+.companies {
+    display: grid;
+    grid-gap: 3rem;
 
+
+    grid-template-areas: 'myArea myArea3 myArea2';
+
+    
+    @media screen and (min-width: 80px) {
+        grid-template-areas: 'myArea myArea2' 'myArea3';
+    }
+    @media screen and (max-width: 560px) {
+        grid-template-areas: 'myArea' 'myArea2' 'myArea3';
+    }
+}
 .company_container {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
     h3 {
         text-align: center;
     }
+
+    &:nth-child(1) {
+        grid-area: myArea;
+    }
+    &:nth-child(2) {
+        grid-area: myArea2;
+    }
+    &:nth-child(2) {
+        grid-area: myArea3;
+    }
+
 }
 .company_container__image {
     min-width: 200px;
-    max-width: 320px;
+    max-width: 300px;
 
     min-height: 200px;
     max-height: 200px;
@@ -180,18 +211,21 @@
 
     transition: 300ms;
 
+    align-self: center;
 
 
     &:hover {
         transform: scale(1.05) rotate(1deg) translateY(-20px);
-        box-shadow: 0px 5px 50px 6px #dde7d9;
+        box-shadow: 0px 5px 20px 6px #dde7d9;
+    }
+
+    @media screen and (max-width: 500px) {
+        align-self: center;
     }
 
     @media screen and (min-width: 800px) {
         width: 50vw;
         height: 24vw;
-
-    
     }
 }
 
