@@ -2,6 +2,7 @@
 import React from 'react'
 
 import GitHubIcon from '@mui/icons-material/GitHub'
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import AttachEmailIcon from '@mui/icons-material/AttachEmail'
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone'
 
@@ -152,7 +153,7 @@ const HomePage = () => {
             </div>
             
             <a href='https://www.linkedin.com/in/kipchumba-jepkoech-47b7b015a/' className="contact_card su_14" target='_blank'>
-                <GitHubIcon />
+                <LinkedInIcon />
                 <p> Kipchumba Jepkoech </p>
             </a>
 
