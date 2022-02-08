@@ -148,7 +148,7 @@ const HomePage = () => {
 
             <div className="contact_card su_12">
                 <AttachEmailIcon />
-                <p> cynthiakj05@gmail.com </p>
+                <p> ckipchumba18@gmail.com </p>
             </div>
             
             <a href='https://www.linkedin.com/in/kipchumba-jepkoech-47b7b015a/' className="contact_card su_14" target='_blank'>
