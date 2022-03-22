@@ -159,7 +159,7 @@ const HomePage = () => {
 
             <a href='tel:+254714335322' className="contact_card su_16">    
                 <LocalPhoneIcon />
-                <p> +254-714-33-522 </p>
+                <p> +254-714-335-322 </p>
             </a>
             
         </div>
